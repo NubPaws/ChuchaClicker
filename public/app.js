@@ -27,7 +27,6 @@ function mouseDownOnTzuz(event) {
         Game.score += Game.clickPower * 1000;
     if (purring.isPending() || purring.isStopped())
         purring.play();
-    console.log(event);
 }
 function mouseUpOnTzuz(event) {
     tzuz.release();
