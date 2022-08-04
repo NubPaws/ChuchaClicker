@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&family=Poppins:wght@500&display=swap');
+
+#upgrades {
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12pt;
+}
+
+.upgrade-title {
+	text-align: center;
+}
+
+.upgrade-item {
+	border: 1px solid black;
+	flex: 1;
+	padding: 2px;
+	margin: 2px;
+}
+
+.buy-button {
+	font-family: 'Poppins', sans-serif;
+	font-size: 12pt;
+	width: 200px;
+}
+
+.upgrade-info {
+	max-width: 200px;
+}
+
