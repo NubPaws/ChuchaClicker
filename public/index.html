@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Chucha Incremental Game</title>
+		
+		<link rel="stylesheet" href="./styles.css">
+		<link rel="stylesheet" href="./option_styles.css">
+		<link rel="stylesheet" href="./upgrade_styles.css">
+		
+		<link rel="shortcut icon" href="../res/favicon.ico">
+	</head>
+	<body>
+		<span id="hidden">
+			<img class="img-tzuz" src="../res/imgs/tzuz_1.png">
+			<img class="img-tzuz" src="../res/imgs/tzuz_2.png">
+			<img class="img-tzuz" src="../res/imgs/tzuz_3.png">
+			<img class="img-tzuz" src="../res/imgs/tzuz_4.png">
+			<img class="img-tzuz" src="../res/imgs/tzuz_5.png">
+			<img class="img-tzuz" src="../res/imgs/tzuz_6.png">
+			<img class="img-tzuz" src="../res/imgs/tzuz_7.png">
+		</span>
+		
+		<div class="ui-text">
+			<span id="score">
+				<u>Pets</u>:
+				<span id="score-number">0</span>
+				<br />
+				<span id="score-click-number">0</span>
+				(<i><sup>Pets</sup>/<sub>Click</sub></i>)
+				<br />
+				<span id="score-second-number">0</span>
+				(<i><sup>Pets</sup>/<sub>Sec</sub></i>)
+			</span>
+		</div>
+		
+		<canvas id="drawing-board" width="600" height="400"></canvas>
+		
+		<div class="ui-text">
+			<div id="upgrades">
+				<div class="upgrade-item">
+					<div class="upgrade-title"><u>Better Pets</u></div>
+					<button id="upgrade-better-pets-buy" class="buy-button">PURRRCHASE</button><br />
+					cost: <span id="upgrade-better-pets-cost">0</span><br />
+					owned: <span id="upgrade-better-pets-owned">0</span><br />
+					<hr>
+					<div class="upgrade-info">You are becoming a well trained cat petter. Each pet adds 1.1 extra pet.</div>
+				</div>
+				<div class="upgrade-item">
+					<div class="upgrade-title"><u>Scratching Post</u></div>
+					<button id="upgrade-scratching-post-buy" class="buy-button">PURRRCHASE</button><br />
+					cost: <span id="upgrade-scratching-post-cost">0</span><br />
+					owned: <span id="upgrade-scratching-post-owned">0</span><br />
+					<hr>
+					<div class="upgrade-info">Makes Chucha's scratching post fancier. Makes her receive 20 pets/sec</div>
+				</div>
+				<div class="upgrade-item">
+					<div class="upgrade-title"><u>Sticks</u></div>
+					<button id="upgrade-sticks-buy" class="buy-button">PURRRCHASE</button><br />
+					cost: <span id="upgrade-sticks-cost">0</span><br />
+					owned: <span id="upgrade-sticks-owned">0</span><br />
+					<hr>
+					<div class="upgrade-info">Gives Chucha a tasty stick snack. Makes her receive 10 pets/sec</div>
+				</div>
+			</div>
+			<div id="game-options">
+				<button id="button-save" class="game-option-save">Save</button><button id="button-clear" class="game-option-save">Clear</button><button id="button-code" class="game-option-code">Code</button>
+			</div>
+		</div>
+		
+		<script type="module" src="./app.js"></script>
+	</body>
+</html>
